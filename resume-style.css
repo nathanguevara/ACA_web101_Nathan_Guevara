@@ -1,0 +1,28 @@
+.gridContainer {
+    height: 100&
+    width: 600px;
+    display: grid;
+    grid-template-rows: 200px 150px 150px 150px;
+    grid-template-columns: .5fr 1fr;
+}
+h1 {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    text-align: center;
+}
+section.summary {
+    grid-column: 2/1;
+    grid-row: 2/3;
+}
+
+}
+article.sideBar {
+    height: 100%;
+    width: 25%;
+    background-color: blue;
+    color: white;
+}
+div.mainContainer h1 {
+    grid-column: 2;
+    font-size: 50pt;
+}
