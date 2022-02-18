@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Serif', sans-serif;
+}
+.gridContainer{
+    display: grid;
+    grid-template-rows: 50% 50%;
+	grid-template-columns: 33% 33% 33%;
+    column-gap: 10px;
+}    
+.contactHeader {
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
+    color: white;
+    background-color: #2BCEC1;
+    font-size: 2em;
+}
+.email {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;      
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.

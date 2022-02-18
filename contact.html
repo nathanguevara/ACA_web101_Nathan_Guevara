@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact-styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&family=Roboto+Serif:wght@100&display=swap" rel="./contact-styles">
+  <title>Contact</title>
+</head>
+
+<body>
+  <form action="results.html" method="GET" enctype="multipart/form-data">
+    <div class="gridContainer">
+    <div class="contactHeader">Contact</div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div>
+      <label for="date">Birthdate</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+    <div>
+      How did you find me?
+      <div>
+        <label for="classmate">Classmate</label>
+        <input type="checkbox" name="classmate" id="classmate">
+      </div>
+      <div>
+        <label for="resumeSubmission">Resume Submission</label>
+        <input type="checkbox" name="resumeSubmission" id="resumeSubmission">
+      </div>
+    </div>
+    <div>
+      Gender
+      <div>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+      </div>
+      <div>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="other">
+      </div>
+    </div>
+    <div>
+      <label for="eyeColor">Eye Color</label>
+      <select name="eyeColor" id="eyeColor" multiple>
+        <option value="Green">Green</option>
+        <option label="Red" value="Red"></option>
+      </select>
+    </div>
+    <div>
+      <label for="bio">Bio</label>
+      <textarea id="bio" name="bio"></textarea>
+    </div>
+    <input type="hidden" name="hidden" value="hi">
+    <div>
+      <label for="file">File</label>
+      <input id="file" type="file" name="file">
+    </div>
+    <div>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone">
+    </div>
+    <div>
+      <label for="url">URL</label>
+      <input type="url" name="url" id="url">
+    </div>
+    <div>
+      <label for="color">Color</label>
+      <input type="color" name="color" id="color">
+    </div>
+    <div>
+      <label>
+        Password
+        <input type="password" name="password">
+      </label>
+    </div>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+  <!-- <script src="scripts.js"></script> -->
+</body>
+
+</html>
