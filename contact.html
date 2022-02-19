@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&family=Roboto+Serif:wght@100&display=swap" rel="./contact-styles">
-  <title>Contact</title>
+<script src="scripts.js"></script>  
+<title>Contact</title>
 </head>
 
 <body>
@@ -16,11 +17,13 @@
     <div class="gridContainer">
     <div class="contactHeader">Contact</div>
     <div class="email">
-      <label for="email">Email</label>
+      <h2>Email Address</h2>
+      <label for="email"></label>
       <input type="email" name="email" id="email">
     </div>
-    <div>
-      <label for="date">Birthday</label>
+    <div class="date">
+      <label for="date"></label>
+      <h2>Enter birthday for a special message</h2>
       <input type="date" name="date" id="date" min="2019-06-10">
     </div>
     <div>
@@ -47,12 +50,13 @@
       </div>
     </div>
     <div class="comments">
-      <label for="comments">Comments</label>
-      <textarea id="comments" name="bio"></textarea>
+      <label for="comments"></label>
+      <h2>Comments</h2>
+      <textarea maxlength="500"id="comments" name="comments">Comments...</textarea>
     </div>
     <button type="submit">Submit</button>
   </form>
-  <!-- <script src="scripts.js"></script> -->
+
 </body>
 
 </html>

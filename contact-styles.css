@@ -40,6 +40,9 @@ button {
     width:300px;
     height: 50px;
 }
+textarea {
+    resize: none;
+}
 @media only screen and (max-width: 576px) {
     body {
       background-color: white;
