@@ -27,6 +27,7 @@ body {
 .checkboxes {
     grid-column: 1;
     grid-row: 4;
+    text-decoration: none;
 }
 .radioButtons {
     grid-column: 1;
@@ -42,6 +43,9 @@ button {
 }
 textarea {
     resize: none;
+}
+li {
+    list-style-type: none;
 }
 @media only screen and (max-width: 576px) {
     body {
