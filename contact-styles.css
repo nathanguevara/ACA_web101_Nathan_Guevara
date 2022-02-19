@@ -5,49 +5,49 @@ body {
 }
 .gridContainer{
     display: grid;
-    grid-template-rows: 33% 33% 33%;
-	grid-template-columns: 33% 33% 33%;
-    column-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 100%;
 }    
 .contactHeader {
-    text-align: center;
-    grid-column: 1/4;
+    grid-column: 1;
     grid-row: 1;
-    color: white;
-    display: flex;
-    flex-direction: column;
     background-color: #2BCEC1;
     font-size: 2em;
+    text-align: center;
 }
 .email {
-    grid-column: 2;
-    grid-row: 3;
-    display: flex;      
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
+    padding-top: 5%;
+    grid-column: 1;
+    grid-row: 2;
 }
 .date {
-    grid-column: 3;
-    grid-row: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1;
+    grid-row: 3;
 }
 .checkboxes {
-    grid-column: 5;
-    grid-row: 5;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1;
+    grid-row: 4;
 }
 .radioButtons {
-    grid-column: 4;
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-column: 1;
+    grid-row: 5;
+}
+.comments {
+    grid-column: 1;
+    grid-row: 6
+}
+button {
+    width:300px;
+    height: 50px;
+}
+@media only screen and (max-width: 576px) {
+    body {
+      background-color: white;
+      color: black;
+    }
+    .gridContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
