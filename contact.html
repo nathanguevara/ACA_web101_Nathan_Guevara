@@ -6,49 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./contact-styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&family=Roboto+Serif:wght@100&display=swap" rel="./contact-styles">
-<script src="scripts.js"></script>  
-<title>Contact</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;700&family=Roboto+Serif:wght@100&display=swap"
+    rel="./contact-styles">
+  <script src="scripts.js"></script>
+  <title>Contact</title>
 </head>
 
 <body>
   <form action="results.html" method="GET" enctype="multipart/form-data">
     <div class="gridContainer">
-    <div class="contactHeader">Contact</div>
-    <div class="email">
-      <h2>Email Address</h2>
-      <label for="email"></label>
-      <input type="email" name="email" id="email">
-    </div>
-    <div class="date">
-      <label for="date"></label>
-      <h2>Enter bday for bday wishes! (optional)</h2>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      <h2>How did you find me?</h2>
+      <div class="contactHeader">Contact</div>
+      <div class="email">
+        <h2>Email Address</h2>
+        <label for="email"></label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="date">
+        <label for="date"></label>
+        <h2>Enter bday for bday wishes! (optional)</h2>
+        <input type="date" name="date" id="date" min="2019-06-10">
+      </div>
+      <div>
+        <h2>How did you find me?</h2>
         <li><input type="checkbox"> Classmate</li>
         <li><input type="checkbox"> Resume Submission</li>
         <li><input type="checkbox"> LinkedIn</li>
         <li><input type="checkbox"> Coding Academy Rec</li>
-    <div class="radioButtons">
-      <h2>Do you want a response from me?</h2>
-      <div>
-        <label for="respondYes">Yes</label>
-        <input type="radio" name="response" id="respondYes" value="Yes">
       </div>
-      <div>
-        <label for="respondNo">No</label>
-        <input type="radio" name="response" id="respondNo" value="No">
-      </div>
+        <div class="radioButtons">
+          <h2>Do you want a response from me?</h2>
+          <div>
+            <label for="respondYes">Yes</label>
+            <input type="radio" name="response" id="respondYes" value="Yes">
+          </div>
+          <div>
+            <label for="respondNo">No</label>
+            <input type="radio" name="response" id="respondNo" value="No">
+          </div>
+        </div>
+        <div class="comments">
+          <label for="comments"></label>
+          <h2>What's up?</h2>
+          <textarea maxlength="500" id="comments" name="comments">Comments...</textarea>
+        </div>
+        <button type="submit">Submit</button>
     </div>
-    <div class="comments">
-      <label for="comments"></label>
-      <h2>What's up?</h2>
-      <textarea maxlength="500"id="comments" name="comments">Comments...</textarea>
-    </div>
-    <button type="submit">Submit</button>
   </form>
 
 </body>
