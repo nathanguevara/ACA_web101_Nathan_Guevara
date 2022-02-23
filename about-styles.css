@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* margin-top: 100px;
+    margin-bottom: 140px;
+    -webkit-box-align: center; */
+}  
+.hi-there-heading {
+    width: 50%;
+    background-color: white;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    line-height: 28px;
+}
+#image-container > img {
+    grid-column: 2;
+    grid-row: 1;
+    object-fit: contain;
+    object-position: 50% 50%;
+    width: 300px;
+}
